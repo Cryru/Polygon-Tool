@@ -79,7 +79,7 @@ function start()
 		let exporttext = [];
 
 		for (var i = 0; i < listOffset.length; i++) {
-			exporttext.push($("#vertname").val() + ".Add(new Physics.Vector2(" + listOffset[i].x + "," + listOffset[i].y + "));");
+			exporttext.push($("#vertname").val() + ".Add(new Vector2(" + listOffset[i].x + "," + listOffset[i].y + "));");
 		}
 
 		$("#exportbox").val(exporttext.join('\n'));
