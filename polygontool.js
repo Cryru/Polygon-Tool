@@ -1,7 +1,7 @@
 $(start);
 
-console.log("Loaded SoulEngine Polygon Tool Version 3");
-console.log("Repository: https://github.com/Cryru/SE-Polygon-Tool")
+console.log("Loaded Polygon Tool Version 3");
+console.log("Repository: https://github.com/Cryru/Polygon-Tool")
 console.log("SoulEngine Repository: https://github.com/Cryru/SoulEngine")
 
 function start() {
