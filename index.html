@@ -1,31 +1,76 @@
 <html>
+
 <head>
-<script src="libs/jquery.js"></script>
+	<script src="libs/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-reboot.min.css">
+	<script src="libs/transform.js"></script>
+	<script src="polygontool.js"></script>
 </head>
-<body>
-<script src="polytool.js"></script>
-<img id="image" style="display: none;">
-<canvas id='drawarea'>
-</canvas>
-<div id='main' style="display: block;">
-	<div id='listdiv' style="display: inline-block; width: 30%; height: 50%; vertical-align: top; margin: 5px;">
-		<textarea id='exportbox' style="width: 400px; height: 200px">
-		</textarea>
+
+<body style="overflow: hidden">
+	<div class='container-fluid'>
+		<div style="margin: 10px"> </div>
+		<div class="row">
+			<div class="col-sm-9">
+				<canvas id='drawarea'> </canvas>
+			</div>
+			<div class="col-sm-3">
+				<textarea id='exportbox' style="width: 100%; height: 75%; font-family: Consolas;" /> </textarea>
+			</div>
+		</div>
+		<div style="margin: 10px"> </div>
+		<div class="row">
+			<div class="col-sm-6">
+				Remember to place your vertices in counter-clockwise order for physics to work!
+				<ul>
+					<li>Click to create a vertex.</li>
+					<li>Click and drag with the middle mouse button to pan.</li>
+					<li>Use the scroll wheel to zoom in and out.</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12">
+								Vertices Object Name: <input type="text" id="vertname">
+							</div>
+						</div>
+						<div style="margin: 10px"> </div>
+						<div class="row">
+							<div class="col-sm-12">
+								Underlay Image: <input type="file" id="file">
+							</div>
+						</div>
+						<div style="margin: 10px"> </div>
+						<div class="row">
+							<div class="col-sm-12">
+								<button id='backbutton'>Undo Last Point</button>
+								<button id='resetbutton'>Clear All Points</button>
+								<button id='resetview'>Reset View</button>
+							</div>
+						</div>
+						<div style="margin: 10px"> </div>
+						<div class="row">
+							<div class="col-sm-12">
+								<input type='checkbox' id='rayaPolygon'> SoulEngine 2018 Shape Polygon</input>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<input type='checkbox' id='asArray'> Export as an array</input>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="margin: 10px"> </div>
+
+		</div>
 	</div>
-	<div id='controldiv' style="display: inline-block; width: 40%; height: 50%; vertical-align: top; margin: 5px;">
-		Vertices Object: <input type="text" id="vertname">
-		<button id='backbutton'>Undo</button>
-		<button id='resetbutton'>Reset</button>
-		<br>
-		<input type="file" id="file">
-		<br>
-		Remember to place your vertices in counter-clockwise order!
-	</div>
-</div>
+	<img id="image" style="display: none;">
 </body>
+
 </html>
-
-
-
-
-

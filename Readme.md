@@ -1,9 +1,8 @@
-##What?
+## What is it?
 
-Polygon Tool is a javascript application for generating physics vertices for [SoulEngine](https://github.com/Cryru/SoulEngine).
-A version of this tool is included with SoulEngine version 0.90 and onward.
+Polygon Tool is a javascript application for generating polygon vertices for [SoulEngine](https://github.com/Cryru/SoulEngine).
 
-##How?
+## Try it out
 
-To generate vertices first select your image file using the "Choose File" button.
-Now you can start clicking to place vertices, and once you are ready all you have to do is copy the generated code.
+You can try the tool out online [here](https://cryru.github.io/SE-Polygon-Tool/).
+
