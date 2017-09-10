@@ -4,5 +4,5 @@ Polygon Tool is a javascript application for generating polygon vertices for [So
 
 ## Try it out
 
-You can try the tool out online [here](https://cryru.github.io/SE-Polygon-Tool/).
+You can try the tool out online [here](https://cryru.github.io/Polygon-Tool/).
 
