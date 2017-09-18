@@ -1,6 +1,6 @@
 $(start);
 
-console.log("Loaded Polygon Tool Version 3");
+console.log("Loaded Polygon Tool Version 3.1");
 console.log("Repository: https://github.com/Cryru/Polygon-Tool")
 console.log("SoulEngine Repository: https://github.com/Cryru/SoulEngine")
 
@@ -40,7 +40,7 @@ function start() {
 	$(document).keydown(buttonEvent);
 	$("#image")[0].onload = update;
 	$("#vertname").val("vert").keyup(update);
-	$("#rayaPolygon").change(update);
+	$("#sePolygon").change(update);
 	$("#asArray").change(update);
 	$("#resetview").click(() => { context.setTransform(1, 0, 0, 1, 0, 0); update(); });
 	$(canvas).mousedown(mouseClick);
@@ -102,8 +102,8 @@ function start() {
 		} else if (moveUnderlay) {
 			let location = getMousePos(evt);
 
-			underlayX = location.x;
-			underlayY = location.y;
+			underlayX = location.x - $("#image")[0].naturalWidth / 2;
+			underlayY = location.y - $("#image")[0].naturalHeight / 2;
 			update();
 		}
 	}
@@ -200,7 +200,7 @@ function start() {
 		}
 
 		// Get mode, physics polygon or SE 2018 Polygon.
-		let isRayaPolygon = $("#rayaPolygon")[0].checked;
+		let isRayaPolygon = $("#sePolygon")[0].checked;
 		// Get whether we are exporting as an array or a list as is default.
 		let asArray = $("#asArray")[0].checked;
 
